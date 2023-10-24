@@ -30,7 +30,10 @@ public class FizzBuzzTests {
                     Arguments.of(6, "Fizz"),
                     Arguments.of(21, "Fizz"),
                     Arguments.of(5, "Buzz"),
-                    Arguments.of(10, "Buzz")
-                    );
+                    Arguments.of(10, "Buzz"),
+                    Arguments.of(15, "FizzBuzz"),
+                    Arguments.of(30, "FizzBuzz")
+
+            );
         }
 }
