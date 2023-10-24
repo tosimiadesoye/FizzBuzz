@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 @DisplayName("The FizzBuzz class should")
 public class FizzBuzzTests {
     @ParameterizedTest
-    @MethodSource("exerciseArguements")
-    @DisplayName("should return number, 'Fizz', 'Buzz'or'FizzBuzz'")
+    @MethodSource("exercise1Arguments")
+    @DisplayName("should return number, 'Fizz', 'Buzz' or 'FizzBuzz'")
 
     public void shouldReturnCorrectOutput(Integer value, String expected) {
         final String actual = FizzBuzz.of(value);
@@ -28,7 +28,9 @@ public class FizzBuzzTests {
                     Arguments.of(1, "1"),
                     Arguments.of(3, "Fizz"),
                     Arguments.of(6, "Fizz"),
-                    Arguments.of(21, "Fizz")
+                    Arguments.of(21, "Fizz"),
+                    Arguments.of(5, "Buzz"),
+                    Arguments.of(10, "Buzz")
                     );
         }
 }

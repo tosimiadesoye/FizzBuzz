@@ -6,6 +6,9 @@ public class FizzBuzz {
         // if it a multiple of 5 return Buzz
         // if it a multiple of 15 return FizzBuzz
         public static String of(int num) {
-                return null;
+                if(num % 3 == 0){
+                        return "Fizz";
+                }
+                return String.valueOf(num);
         }
 }
