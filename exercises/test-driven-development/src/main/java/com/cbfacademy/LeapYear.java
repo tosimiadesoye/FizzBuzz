@@ -13,6 +13,5 @@ public class LeapYear {
             return true;
         }
         return false;
-
     }
 }
