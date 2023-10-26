@@ -13,9 +13,18 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 
-
 @DisplayName("The LeapYear class should")
 public class LeapYearTest {
+
+    public static Stream<Arguments> exercise1Arguments() {
+        return Stream.of(
+                Arguments.of(1900, false),
+                Arguments.of(1700, false),
+                Arguments.of(800, true),
+                Arguments.of(2000, true),
+                Arguments.of(2008, true)
+        );
+    }
 
     @ParameterizedTest
     @MethodSource("exercise1Arguments")
@@ -25,12 +34,6 @@ public class LeapYearTest {
         final boolean actual = LeapYear.isALeapYear(year);
 
         assertThat(actual, is(expected));
-    }
-    public static Stream<Arguments> exercise1Arguments(){
-        return Stream.of(
-                Arguments.of(1900, false)
-
-        );
     }
 
 }
