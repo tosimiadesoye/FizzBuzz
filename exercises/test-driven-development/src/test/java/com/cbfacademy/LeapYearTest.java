@@ -24,6 +24,7 @@ public class LeapYearTest {
                 Arguments.of(2000, true),
                 Arguments.of(2008, true),
                 Arguments.of(1300, true)
+
         );
     }
 
