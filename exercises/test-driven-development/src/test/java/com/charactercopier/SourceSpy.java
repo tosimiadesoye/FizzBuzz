@@ -1,3 +1,12 @@
+package com.charactercopier;
+
+interface Source {
+
+    String getCharacter();
+}
+
+
+
 public class SourceSpy implements Source {
 
     private Integer numberOfCalls = 0;
